@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Outfit";
+  background-color: #0D192C;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 302px 241px;
+  grid-template-columns: 327px;
+  place-content: center;
+}
+
+main {
+  padding: 62px 0 0 0;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+}
+
+.container {
+  background-color: #15263F;
+  height: 543px;
+  padding: 24px;
+  border-radius: 15px;
+}
+
+.image-container img {
+  width: 278px;
+  height: 278px;
+  border-radius: 8px;
+}
+
+.container {
+  /* Overlay Image */
+}
+.container h1 {
+  font-weight: 600;
+  color: #FFFFFF;
+  font-size: 1.375rem;
+  padding: 24px 0 12px 0;
+}
+.container p {
+  font-weight: 300;
+  font-size: 1.125rem;
+  color: #8BACD9;
+  padding-bottom: 16px;
+}
+.container .price-date {
+  display: flex;
+  justify-content: space-between;
+}
+.container .price-date .price {
+  display: flex;
+}
+.container .price-date .price p {
+  color: #00FFF8;
+  font-size: 0.938rem;
+  font-weight: 400;
+}
+.container .price-date .price img {
+  width: 11px;
+  height: 18px;
+  padding-right: 6.48px;
+}
+.container .price-date .date {
+  display: flex;
+}
+.container .price-date .date p {
+  color: #8BACD9;
+  font-size: 0.938rem;
+  font-weight: 400;
+}
+.container .price-date .date img {
+  width: 16px;
+  height: 16px;
+  padding-right: 7.7px;
+}
+.container .horizontal-line {
+  border: solid 1px #2E405A;
+  height: 0px;
+  margin: 0 0 16px 0;
+}
+.container .profile {
+  display: flex;
+}
+.container .profile img {
+  border: 1px solid #FFFFFF;
+  border-radius: 25px;
+  width: 31px;
+  height: 31px;
+}
+.container .profile p {
+  padding: 5px 0 0 16px;
+}
+.container .profile p span {
+  color: #FFFFFF;
+}
+.container .image-container {
+  position: relative;
+  display: inline-block;
+}
+.container .overlay-image {
+  display: none;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    display: grid;
+    place-items: center;
+  }
+  main {
+    grid-template-rows: 326px 270px;
+    grid-template-columns: 350px;
+  }
+  main {
+    padding: 0;
+  }
+  .container {
+    padding: 24px 24px 32px 24px;
+  }
+  .image-container img {
+    width: 302px;
+    height: 302px;
+  }
+  .container h1 {
+    padding-bottom: 16px;
+  }
+  .container h1:hover {
+    color: #00FFF8;
+  }
+  .container p {
+    padding-bottom: 24px;
+  }
+  .container .overlay-image {
+    display: block;
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    width: 302px;
+    height: 302px;
+    background-image: url("../images/icon-view.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 255, 248, 0.5);
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+  }
+  .container .image-container:hover .overlay-image {
+    opacity: 1;
+  }
+  .container .profile p span:hover {
+    color: #00FFF8;
+  }
+}/*# sourceMappingURL=main.css.map */
