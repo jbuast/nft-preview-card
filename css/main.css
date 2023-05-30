@@ -29,13 +29,14 @@ main {
 .container {
   background-color: #15263F;
   height: 543px;
+  width: auto;
   padding: 24px;
   border-radius: 15px;
 }
 
 .image-container img {
-  width: 278px;
   height: 278px;
+  width: 278px;
   border-radius: 8px;
 }
 
@@ -44,8 +45,8 @@ main {
 }
 .container h1 {
   font-weight: 600;
-  color: #FFFFFF;
   font-size: 1.375rem;
+  color: #FFFFFF;
   padding: 24px 0 12px 0;
 }
 .container p {
@@ -62,31 +63,32 @@ main {
   display: flex;
 }
 .container .price-date .price p {
-  color: #00FFF8;
-  font-size: 0.938rem;
   font-weight: 400;
+  font-size: 0.938rem;
+  color: #00FFF8;
 }
 .container .price-date .price img {
-  width: 11px;
   height: 18px;
+  width: 11px;
   padding-right: 6.48px;
 }
 .container .price-date .date {
   display: flex;
 }
 .container .price-date .date p {
-  color: #8BACD9;
-  font-size: 0.938rem;
   font-weight: 400;
+  font-size: 0.938rem;
+  color: #8BACD9;
 }
 .container .price-date .date img {
-  width: 16px;
   height: 16px;
+  width: 16px;
   padding-right: 7.7px;
 }
 .container .horizontal-line {
   border: solid 1px #2E405A;
   height: 0px;
+  width: auto;
   margin: 0 0 16px 0;
 }
 .container .profile {
@@ -95,8 +97,8 @@ main {
 .container .profile img {
   border: 1px solid #FFFFFF;
   border-radius: 25px;
-  width: 31px;
   height: 31px;
+  width: 31px;
 }
 .container .profile p {
   padding: 5px 0 0 16px;
@@ -128,8 +130,8 @@ main {
     padding: 24px 24px 32px 24px;
   }
   .image-container img {
-    width: 302px;
     height: 302px;
+    width: 302px;
   }
   .container h1 {
     padding-bottom: 16px;

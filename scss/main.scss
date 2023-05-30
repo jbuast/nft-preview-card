@@ -19,8 +19,7 @@ body{
 
 main {
     display: grid;
-    grid-template-rows: 302px 241px;
-    grid-template-columns: 327px;
+    @include mixins.grid-layout(302px 241px, 327px);
     place-content: center;
 }
 main{ 
@@ -34,26 +33,23 @@ main{
 }
 .container{
     background-color: variables.$card-bg;
-    height: 543px;
+    @include mixins.height-width(543px, auto);
     padding: 24px;
     border-radius: 15px;
 }
 
 .image-container img {
-    width: 278px;
-    height: 278px;
+    @include mixins.height-width(278px, 278px);
     border-radius: 8px;
 }
 .container{
     h1{
-        font-weight: 600;
+        @include mixins.font-weight-size(600, 1.375rem);
         color: variables.$white;
-        font-size: 1.375rem;
         padding: 24px 0 12px 0;
     }
     p{
-        font-weight: 300;
-        font-size: 1.125rem;
+        @include mixins.font-weight-size(300, 1.125rem);
         color: variables.$soft-blue;
         padding-bottom: 16px;
     }
@@ -63,33 +59,29 @@ main{
         .price{
             display: flex;
             p{
+                @include mixins.font-weight-size(400, 0.938rem);
                 color: variables.$cyan;
-                font-size: 0.938rem;
-                font-weight: 400;
             }
             img{
-                width: 11px;
-                height: 18px;
+                @include mixins.height-width(18px, 11px);
                 padding-right: 6.48px;
             }
         }
         .date{
             display: flex;
             p{
+                @include mixins.font-weight-size(400, 0.938rem);
                 color: variables.$soft-blue;
-                font-size: 0.938rem;
-                font-weight: 400;
             }
             img{
-                width: 16px;
-                height: 16px;
+                @include mixins.height-width(16px,16px);
                 padding-right: 7.7px;
             }
         }
     }
     .horizontal-line{
        border: solid 1px variables.$line;
-       height: 0px;
+       @include mixins.height-width(0px, auto);
        margin: 0 0 16px 0;
     }
     .profile{
@@ -97,8 +89,7 @@ main{
         img{
             border: 1px solid variables.$white;
             border-radius: 25px;
-            width: 31px;
-            height: 31px;
+            @include mixins.height-width(31px,31px);
         }
         p{
             padding: 5px 0 0 16px;
@@ -124,8 +115,8 @@ main{
         place-items: center;
     }
     main{
-        grid-template-rows: 326px 270px;
-        grid-template-columns: 350px;
+        @include mixins.grid-layout(326px 270px, 350px);
+
     }
     main{
         padding: 0;
@@ -134,8 +125,7 @@ main{
         padding: 24px 24px 32px 24px;
     }
     .image-container img{
-        width: 302px;
-        height: 302px;
+        @include mixins.height-width(302px,302px);
         
     } 
     .container{
